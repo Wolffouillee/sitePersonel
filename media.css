@@ -1,0 +1,65 @@
+@media screen and (max-width: 800px) {
+    
+    /* GENERAL */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* nav */
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+    }
+
+    /* image */
+    *.img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* apparence */
+    .punaise {
+        display: none;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    /* text */
+    section:not(.profil-presentation) {
+        width: 90%;
+    }
+
+    section:not(.profil-presentation) h2[class*="-title"] {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    section:not(header) p[class*="-text"] {
+        font-size: 1.2em;
+    }
+
+    ul[class*="-text-list"] li {
+        font-size: 0.85em;
+        padding: 5px;
+    }
+
+    .hobbies-elmt {
+        border: none;
+        font-size: 0.85em;
+    }
+
+    .hobbies-elmt div[class*="elmt-"] {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .navbar-mobile {
+        display: none;
+    }
+}
