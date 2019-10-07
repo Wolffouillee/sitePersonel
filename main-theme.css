@@ -1,6 +1,6 @@
 /* GENERAL */
 html {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'montserrat', Arial, sans-serif;
 }
 
 body {
@@ -12,17 +12,17 @@ body {
 
 ul p, ol p {
     font-size: 1.3em;
-    font-family: 'Indie Flower', Arial, sans-serif;
+    font-family: 'montserrat', Arial, sans-serif;
 }
 
 p a {
     color: #4586b1;
     text-decoration: none;
-    font-family: 'Indie Flower', Arial, sans-serif;
+    font-family: 'montserrat', Arial, sans-serif;
 }
 
 p:not(.profil-text) strong {
-    font-family: 'Indie Flower', Arial, sans-serif;
+    font-family: 'montserrat', Arial, sans-serif;
 }
 
 p a:hover {
@@ -55,8 +55,8 @@ section:not(header) div[class*="-img"] img {
 }
 
 section:not(header) p[class*="-text"] {
-    font-size: 1.5em;
-    font-family: 'Indie Flower', Arial, sans-serif;
+    font-size: 1.3em;
+    font-family: 'montserrat', Arial, sans-serif;
     width: 80%;
     margin: 50px auto;
     text-align: center;
@@ -84,41 +84,11 @@ section:not(.profil-presentation) h2[class*="-title"] {
     z-index: 99;
 }
 
-/* navbar mobile */
-.navbar-mobile {
-    display: none;
-}
-
-.navbar-mobile {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-mobile .navbar-item {
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    text-decoration: none;
-    color: black;
-    padding: 24px;
-}
-
-.navbar-mobile .navbar-item:hover {
-    box-shadow: inset 0 2px 0 rgb(65, 24, 0);
-    color: rgb(65, 24, 0);
-}
-
 /* topbar */
 .navbar {
     position: sticky;
+    display: flex;
+    flex-wrap: wrap;
     top: 0;
     z-index: 100;
     display: flex;
@@ -217,28 +187,42 @@ section:not(.profil-presentation) h2[class*="-title"] {
 }
 
 /* parcours */
-ul[class*="-text-list"] {
-    font-size: 1.2em;
-    list-style: none;
+.diploma-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 80%;
-    margin-right: 40px;
+    margin: 0 auto 50px auto;
 }
 
-*[class*="-text-list"] li {
+.college-card, .lycee-card, .pompier-card, .mcdo-card, .stmich-card {
+    width: 80%;
+    min-width: 200px;
+    max-width: 800px;
+    margin: 0 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    padding: 20px;
+}
+
+.college-card-header, .lycee-card-header, .pompier-card-header, .mcdo-card-header, .stmich-card-header {
+    position: relative;
+    top: 0;
     text-align: center;
 }
 
-*[class*="-text-list"] [class*="-text-list-border"] > p:first-of-type {
-    text-decoration: underline;
-    background-color: rgb(1, 123, 204);
-    color: white;
-    font-size: 1.5em;
+.college-card-header-separator, .lycee-card-header-separator, .pompier-card-header-separator, .mcdo-card-header-separator, .stmich-card-header-separator {
+    opacity: 0.5;
 }
 
-*[class*="-text-list-border"] {
-    margin: 15px 0;
-    border-radius: 1em;
-    border: 1px solid black;
+.college-card-info-list, .lycee-card-info-list, .pompier-card-info-list, .mcdo-card-info-list, .stmich-card-info-list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.college-card-info-list-items, .lycee-card-info-list-items, .pompier-card-info-list-items, .mcdo-card-info-list-items, .stmich-card-info-list-items {
+    margin: 20px;
 }
 
 #experience .download-cv-button {
@@ -265,7 +249,7 @@ ul[class*="-text-list"] {
     align-items: center;
     width: 85%;
     margin: 25px auto;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 1em;
     padding: 20px;
 }
@@ -273,7 +257,7 @@ ul[class*="-text-list"] {
 .hobbies-elmt p {
     text-align: center;
     width: calc(100%-64px);
-    font-family: 'Indie Flower', Arial, sans-serif;
+    font-family: 'monserrat', Arial, sans-serif;
     font-size: 1.5em;
 }
 
