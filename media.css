@@ -1,17 +1,16 @@
 @media screen and (max-width: 800px) {
     
     /* GENERAL */
-    body {
+    html {
         overflow-x: hidden;
     }
 
-    /* nav */
-    .navbar {
-        display: none;
+    .biographie {
+        width: 100%;
     }
 
-    .navbar-mobile {
-        display: flex;
+    .navbar {
+        position: relative;
     }
 
     /* image */
@@ -29,23 +28,26 @@
         display: none;
     }
 
+    .college-card, .lycee-card, .pompier-card, .mcdo-card, .stmich-card {
+        width: 99%;
+    }
+
+    .college-card ul, .lycee-card ul, .pompier-card ul, .mcdo-card ul, .stmich-card ul {
+        width: 99%;
+    }
+
     /* text */
     section:not(.profil-presentation) {
-        width: 90%;
+        width: 95%;
     }
 
     section:not(.profil-presentation) h2[class*="-title"] {
-        font-size: 1.5em;
+        font-size: 1.4em;
         text-align: center;
     }
 
     section:not(header) p[class*="-text"] {
         font-size: 1.2em;
-    }
-
-    ul[class*="-text-list"] li {
-        font-size: 0.85em;
-        padding: 5px;
     }
 
     .hobbies-elmt {

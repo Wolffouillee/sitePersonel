@@ -37,13 +37,7 @@
             --><a class="navbar-item" href="#motivation">Motivations</a><!--
             --><a class="navbar-item" href="#parcours">Parcours</a><!--
             --><a class="navbar-item" href="#experience">Expériences</a><!--
-            --><a class="navbar-item" href="#hobbies">Activités</a><!--
-            --><a class="navbar-item" href="contact.html">Contact</a>
-        </nav>
-
-        <!-- navbar-mobile == display: none; -->
-        <nav class="navbar-mobile">
-            <a class="navbar-item" href="contact.html">Contact</a>
+            --><a class="navbar-item" href="#hobbies">Activités</a>
         </nav>
 
         <!-- BIOGRAPHIE -->
@@ -93,7 +87,7 @@
 
             <img class="punaise" src="img/punaise.png" alt="">
 
-            <h2 class="parcours-title">Mon parcours | Mes diplômes</h2>
+            <h2 class="parcours-title">Mes diplômes</h2>
     
             <hr class="separator">
     
@@ -106,62 +100,95 @@
             <p class="parcours-text">
 
                 Voici un bref récapitulatif de mon parcours de vie et de mes diplômes :
-
-                <ul class="parcours-text-list">
-                    <!-- brevet -->
-                    <li class="parcours-text-list-border">
-                        <p>
-                            <strong>2014</strong>: Collège Joseph-Paul-Boncour
-                        </p>
-                        
-                        <!-- sublist brevet -->
-                        <ul>
-                            <li>
-                                <p>
-                                    Obtention du Diplôme National du Brevet des Collèges avec mention "assez bien".
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- bac -->
-                    <li class="parcours-text-list-border">
-                        <p>
-                            <strong>2014-2017</strong>: Lycée Augustin-Thierry
-                        </p>
-
-                        <!-- sublist bac -->
-                        <ul>
-                            <li>
-                                <p>
-                                    Obtention du baccalauréat scientifique spécialité Science Vie et Terre sans mention.
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- pompier-->
-                    <li class="parcours-text-list-border">
-                        <p>
-                            <strong>2018-2019</strong>: Sapeur-Pompier-Volontaire
-                        </p>
-
-                        <!-- sublist pompier -->
-                        <ul>
-                            <li>
-                                <p>
-                                    Diplôme de Préventions et Secours Civiques de niveau 1.
-                                </p> 
-                            </li>
-                            <li>
-                                <p>
-                                    Diplôme de de Premiers Secours en Équipe de niveau 1.
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
             </p>
+
+            <div class="diploma-cards-container">
+
+                <!-- COLLEGE CARD -->
+                <div class="college-card">
+                    <header class="college-card-header">
+                        <hr class="college-card-header-separator">
+                        <h3 class="college-card-title">2014: Collège Joseph Paul Boncour</h3>
+                        <hr class="college-card-header-separator">
+                    </header>
+
+                    <aside class="college-card-info">
+
+                        <ul class="college-card-info-list">
+                            <li class="college-card-info-list-items">
+                                Diplôme National du Brevet des Collèges
+                            </li>
+
+                            <li class="college-card-info-list-items">
+                                Option latin
+                            </li>
+
+                            <li class="college-card-info-list-items">
+                                Mention assez bien
+                            </li>
+                        </ul>
+
+                    </aside>
+                </div>
+
+                <!-- LYCEE CARD -->
+                <div class="lycee-card">
+                    <header class="lycee-card-header">
+                        <hr class="lycee-card-header-separator">
+                        <h3 class="lycee-card-title">2014 - 2017: Lycée Augustin-Thierry</h3>
+                        <hr class="lycee-card-header-separator">
+                    </header>
+    
+                    <aside class="lycee-card-info">
+    
+                        <ul class="lycee-card-info-list">
+                            <li class="lycee-card-info-list-items">
+                                Baccalauréat général
+                            </li>
+    
+                            <li class="lycee-card-info-list-items">
+                                Série Scientifique
+                            </li>
+    
+                            <li class="lycee-card-info-list-items">
+                                Spécialité Science Vie et Terre
+                            </li>
+
+                            <li class="lycee-card-info-list-items">
+                                Sans mention
+                            </li>
+                        </ul>
+    
+                    </aside>
+                </div>
+
+                <div class="pompier-card">
+                    <header class="pompier-card-header">
+                        <hr class="pompier-card-header-separator">
+                        <h3 class="pompier-card-title">2018: Sapeur-Pompier volontaire</h3>
+                        <hr class="pompier-card-header-separator">
+                    </header>
+        
+                    <aside class="pompier-card-info">
+        
+                        <ul class="pompier-card-info-list">
+                            <li class="pompier-card-info-list-items">
+                                Caserne de Saint-Romain sur Cher
+                            </li>
+        
+                            <li class="pompier-card-info-list-items">
+                                Premier Secours Civique de niveau 1
+                            </li>
+        
+                            <li class="pompier-card-info-list-items">
+                                Premier Secours en Équipe de niveau 1
+                            </li>
+                        </ul>
+        
+                    </aside>
+                </div>
+
+            </div>
         </section>
 
         <!-- EXPERIENCE -->
@@ -182,41 +209,71 @@
             <p class="exp-text">
     
                 Je n'ai eu que très peu d'expériences professionnelles jusqu'à aujourd'hui, voici un bref récapitulatif :
-    
-                <ul class="exp-text-list">
-                    <!-- brevet -->
-                    <li class="exp-text-list-border">
-                        <p>
-                            <strong>2017</strong>: Équipier-polyvalent dans un restaurant McDonald's
-                        </p>
-
-                        <ul>
-                            <li>
-                                <p>
-                                    <strong>Objectif premier</strong> : financer une formation en tant que développeur web sur la plateforme en-ligne <a href="https://openclassrooms.com/" target="_blank">Openclassrooms</a>.
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-    
-                    <!-- bac -->
-                    <li class="exp-text-list-border">
-                        <p>
-                            <strong>2018-2019</strong>: Équipier-polyvalent dans un restaurant McDonald's
-                        </p>
-    
-                        <!-- sublist bac -->
-                        <ul>
-                            <li>
-                                <p>
-                                    Suivi et évaluation quotidiennes des nouveaux et anciens équipiers afin de reprendre ci-besoins les bons gestes pour une production de qualité.
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
             </p>
-            <a href="dl/CV2019 - DELETANG Dimitri.docx" class="download-cv-button">Télécharger mon CV</a>
+
+            <div class="diploma-cards-container">
+
+                <!-- MCDO CARD -->
+                <div class="mcdo-card">
+                    <header class="mcdo-card-header">
+                        <hr class="mcdo-card-header-separator">
+                        <h3 class="mcdo-card-title">2017 - 2019: Équipier-formateur polyvalent dans un restaurant McDonald's</h3>
+                        <hr class="mcdo-card-header-separator">
+                    </header>
+    
+                    <aside class="mcdo-card-info">
+    
+                        <ul class="mcdo-card-info-list">
+                            <li class="mcdo-card-info-list-items">
+                                Former les nouveaux équipiers dans le restaurant
+                            </li>
+
+                            <li class="mcdo-card-info-list-items">
+                                Attention sur les gestes des équipiers et la qualité des produits.
+                            </li>
+
+                            <li class="mcdo-card-info-list-items">
+                                Formation en continu des équipiers.
+                            </li>
+                        </ul>
+    
+                    </aside>
+                </div>
+    
+                <!-- ST MICHEL CARD -->
+                <div class="stmich-card">
+                    <header class="stmich-card-header">
+                        <hr class="stmich-card-header-separator">
+                        <h3 class="stmich-card-title">2019: Opérateur en conditionnement dans une usine Saint-Michel</h3>
+                        <hr class="stmich-card-header-separator">
+                    </header>
+        
+                    <aside class="stmich-card-info">
+        
+                        <ul class="stmich-card-info-list">
+                            <li class="stmich-card-info-list-items">
+                                Vérifier l'état et l'étiquettage des cartons avant la mise sur palette.
+                            </li>
+        
+                            <li class="stmich-card-info-list-items">
+                                Attention sur le fonctionnement des machines d'emballage.
+                            </li>
+        
+                            <li class="stmich-card-info-list-items">
+                                Spécialité Science Vie et Terre
+                            </li>
+    
+                            <li class="stmich-card-info-list-items">
+                                Sans mention
+                            </li>
+                        </ul>
+        
+                    </aside>
+                </div>
+    
+            </div>
+
+            <a href="dl/CV2019_DELETANG_Dimitri.docx" class="download-cv-button">Télécharger mon CV</a>
         </section>
 
         <!-- HOBBIES -->
