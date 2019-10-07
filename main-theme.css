@@ -103,6 +103,7 @@ section:not(.profil-presentation) h2[class*="-title"] {
     display: block;
     text-align: center;
     width: 25%;
+    max-width: 100px;
     height: auto;
     text-decoration: none;
     color: black;
@@ -218,7 +219,8 @@ section:not(.profil-presentation) h2[class*="-title"] {
 
 .college-card-info-list, .lycee-card-info-list, .pompier-card-info-list, .mcdo-card-info-list, .stmich-card-info-list {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
+    padding: 0 20px; 
 }
 
 .college-card-info-list-items, .lycee-card-info-list-items, .pompier-card-info-list-items, .mcdo-card-info-list-items, .stmich-card-info-list-items {
